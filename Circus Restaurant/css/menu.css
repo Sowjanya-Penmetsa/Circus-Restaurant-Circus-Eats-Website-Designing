@@ -1,0 +1,24 @@
+ /* Heading  */
+ .strokeme {
+    color: rgb(231, 163, 163);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+
+  .badge-notify {
+    background: red;
+    position: relative;
+    top: -20px;
+    right: 20px;
+  }
+
+  .my-cart-icon-affix {
+    /* position: fixed; */
+    z-index: 999;
+
+
+  }
+
+  
+  .card-body {
+    background-color: transparent;
+  }

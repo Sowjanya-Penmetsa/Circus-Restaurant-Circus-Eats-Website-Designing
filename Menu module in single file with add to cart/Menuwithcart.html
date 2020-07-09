@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Circus Restaurant</title>
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="custom.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="bootstrap4/css/bootstrap.css">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="css/bootstrap-social.css">
+    <!-- Add font library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+  .badge-notify{
+    background:red;
+    position:relative;
+    top: -20px;
+    right: 20px;
+  }
+  .my-cart-icon-affix {
+    /* position: fixed; */
+    z-index: 999;
+    
+    
+  }
+  </style>
+  <style>
+    .card
+    {
+        border-style: solid;
+        border-spacing: 1pt;
+        border-color:darkcyan;
+        border-width: 2px;
+    }
+    .card-body
+    {
+      background-color: cyan;
+      border-style: solid;
+      border-width:1px ;
+    } 
+    
+  </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <div>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="home.html"><img src="images/1.webp" width="125" height="75" alt=""></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Event</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Gallery.html">Gallery</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!--main content here-->
+
+  <div class="page-header">
+    <h1 style="font-style:oblique;text-align:center">Have a look at our yummy yummy tasty items 
+      <div style="float: right; cursor: pointer;">
+        <span class="glyphicon glyphicon-shopping-cart my-cart-icon"><span class="badge badge-notify my-cart-badge"></span></span>
+      </div>
+    </h1>
+  </div>
+
+  <section class="main">
+    <center>
+    <a href="#starters" class="btn btn-primary stretched-link">Starters</a>
+    <a href="#beverages" class="btn btn-primary stretched-link">Beverages</a>
+    <a href="#main-course" class="btn btn-primary stretched-link">Main-Courses</a>
+    <a href="#desserts" class="btn btn-primary stretched-link">Desserts</a>
+  </center>
+</section><hr>
+<!-- Starters section-->
+<section id="starters" style="margin-left:5%; margin-right:5%">
+    <center><h1>Enjoy the taste of our Starters </h1><br><br></center>
+    <div class="row">
+      
+        <div class="col-md-3 text-center">
+            <img src="Starters\Kebab.jpg" width="200px" height="200px" >
+            <div style="background-color:cyan; border-style: solid; border-width: 1px; height:30px;"><strong>Veg Haryali Kebab</strong></div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:100px;">Ingredients: Green peas, Potatoes, Paneer, Rapsolja, Mango powder, Mint, Fennel, Green chilli, Ginger, Kastoori methi, Black pepper, Salt</div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:30px;"><b>Price:25kr</b></div><br>
+            <button class="btn btn-danger my-cart-btn" data-id="1" data-name="Veg Haryali Kebab"  data-price="25" data-quantity="1" data-image="Starters\Kebab.jpg">Add to Cart</button><br>
+        </div>
+        
+        <div class="col-md-3 text-center">
+            <img src="Starters\babycorn.jpg" width="200px" height="200px" >
+            <div style="background-color:cyan; border-style: solid; border-width: 1px; height:30px;"><strong>Golden fry baby corn</strong></div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:100px;">Ingredients: Baby corn,All purpose flour,Corn flour,Curd,Green chilli,Ginger,Red chilli powder,Salt,Baking soda,Oil</div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:30px;"><b>Price:50kr</b></div><br>
+            <button class="btn btn-danger my-cart-btn" data-id="2" data-name="Golden fry baby corn"  data-price="50" data-quantity="1" data-image="Starters\babycorn.jpg">Add to Cart</button><br>
+        </div>
+  
+        <div class="col-md-3 text-center">
+            <img src="Starters\Cheese.jpg" width="200px" height="200px" >
+            <div style="background-color:cyan; border-style: solid; border-width: 1px; height:30px;"><strong>Cheese balls</strong></div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:100px;">Ingredients:Cheese,salt,corn flour,pepper,coriander leaves,oil,green peas,baking soda,spring onions,green chillis,onions</div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:30px;"><b>Price:50kr</b></div><br>
+            <button class="btn btn-danger my-cart-btn" data-id="3" data-name="Cheese balls"  data-price="50" data-quantity="1" data-image="Starters\Cheese.jpg">Add to Cart</button><br>
+        </div>
+  
+        <div class="col-md-3 text-center">
+            <img src="Starters\prawn.jpg" width="200px" height="200px" >
+            <div style="background-color:cyan; border-style: solid; border-width: 1px; height:30px;"><strong>Crispy prawn</strong></div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:100px;">Ingredients:garlic,oil,spices,prawns,rice flour, salt,ginger,corn flour,coriander,mint</div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:30px;"><b>Price:45kr</b></div><br>
+            <button class="btn btn-danger my-cart-btn" data-id="4" data-name="Crispy prawn"  data-price="45" data-quantity="1" data-image="Starters\prawn.jpg">Add to Cart</button><br>
+        </div>
+        
+        <div class="col-md-3 text-center">
+            <img src="Starters\chicken.jpg" width="200px" height="200px" >
+            <div style="background-color:cyan; border-style: solid; border-width: 1px; height:30px;"><strong>Crispy chicken wings</strong></div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:100px;">Ingredients:chicken legs,salt,ginger,garlic,oil,spices,corn flour,rice flour,coriander,mint</div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:30px;"><b>Price:50kr</b></div><br>
+            <button class="btn btn-danger my-cart-btn" data-id="5" data-name="Crispy chicken wings"  data-price="50" data-quantity="1" data-image="Starters\chicken.jpg">Add to Cart</button><br>
+        </div>
+
+        <div class="col-md-3 text-center">
+            <img src="Starters\fries.jpg" width="200px" height="200px" >
+            <div style="background-color:cyan; border-style: solid; border-width: 1px; height:30px;"><strong>Potato fries</strong></div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:100px;">Ingredients:oil,cheese,spring onions,potato,salt,tomato ketchup,coriander</div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:30px;"><b>Price:20kr</b></div><br>
+            <button class="btn btn-danger my-cart-btn" data-id="6" data-name="Potato fries"  data-price="20" data-quantity="1" data-image="Starters\fries.jpg">Add to Cart</button><br>
+        </div>
+
+    </div>
+</section><br><br><hr>
+
+<!-- Beverages Section-->
+
+<section id="beverages" style="margin-left:5%; margin-right:5%"  >
+    <center><h1>Enjoy our beverages</h1></center><br><br>
+<div class="row">
+    
+    <div class="col-md-3 text-center">
+      <img src="Beverages\Blue island.jpg" width="200px" height="200px" >
+      <div style="background-color:cyan; border-style: solid; border-width: 1px; height:30px;"><strong>Blue Island Mocktail</strong></div>
+      <div style="background-color: cyan; border-style: solid; border-width: 1px; height:60px;">Ingredients: Rum,Pina Colada mixer,Limeade,Pineapple Juice,Blue Curacao</div>
+      <div style="background-color: cyan; border-style: solid; border-width: 1px; height:30px; "><b>Price:50kr</b></div><br>
+      <button class="btn btn-danger my-cart-btn" data-id="1" data-name="Blue Island" data-price="50" data-quantity="1" data-image="Beverages\Blue island.jpg">Add to Cart</button><br>
+    </div>
+    
+    <div class="col-md-3 text-center">
+      <img src="Beverages\cucumber.png" width="200px" height="200px" >
+      <div style="background-color:cyan; border-style: solid; border-width: 1px; height:30px;"><strong>Cucumber and Mint Mocktail</strong></div>
+      <div style="background-color: cyan; border-style: solid; border-width: 1px; height:60px;">Ingredients: Cucumber,Mint,Limeade,Gin,lemon</div>
+      <div style="background-color: cyan; border-style: solid; border-width: 1px; height:30px;"><b>Price:60kr</b></div><br>
+      <button class="btn btn-danger my-cart-btn" data-id="2" data-name="cucumber & mint"  data-price="60" data-quantity="1" data-image="Beverages\cucumber.png">Add to Cart</button><br>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <img src="Beverages\Blueberry-cocktail.png" width="200px" height="200px" >
+      <div style="background-color:cyan; border-style: solid; border-width: 1px; height:30px;"><strong>Purple Viking Cocktail</strong></div>
+      <div style="background-color: cyan; border-style: solid; border-width: 1px; height:60px;">Ingredients:Cranberry Juice,Blue Curacao,Sour mix,Vodka,Lime Juice</div>
+      <div style="background-color: cyan; border-style: solid; border-width: 1px; height:30px;"><b>Price:50kr</b></div><br>
+      <button class="btn btn-danger my-cart-btn" data-id="3" data-name="purple viking"  data-price="50" data-quantity="1" data-image="Beverages\Blueberry-cocktail.png">Add to Cart</button><br>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <img src="Beverages\Rainbow.jpg" width="200px" height="200px" >
+      <div style="background-color:cyan; border-style: solid; border-width: 1px; height:30px;"><strong>Rainbow paradise Cocktail</strong></div>
+      <div style="background-color: cyan; border-style: solid; border-width: 1px; height:60px;">Ingredients:Grenadine,PineApple Juice,Coconut rum,Blue Curacao</div>
+      <div style="background-color: cyan; border-style: solid; border-width: 1px; height:30px;"><b>Price:50kr</b></div><br>
+      <button class="btn btn-danger my-cart-btn" data-id="4" data-name="Rainbow paradise"  data-price="50" data-quantity="1" data-image="Beverages\Rainbow.jpg">Add to Cart</button><br>
+    </div>
+    
+    <div class="col-md-3 text-center">
+      <img src="Beverages\Strawberry.jpg" width="200px" height="200px" >
+      <div style="background-color:cyan; border-style: solid; border-width: 1px; height:30px;"><strong>Strawberry Smoothie</strong></div>
+      <div style="background-color: cyan; border-style: solid; border-width: 1px; height:60px;">Ingredients:Strawberries,Milk,Vanilla Ice-cream</div>
+      <div style="background-color: cyan; border-style: solid; border-width: 1px; height:30px;"><b>Price:50kr</b></div><br>
+      <button class="btn btn-danger my-cart-btn" data-id="5" data-name="strawberry smoothie"  data-price="50" data-quantity="1" data-image="Beverages\Strawberry.jpg">Add to Cart</button><br>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <img src="Beverages\Kitkat.png" width="200px" height="200px" >
+      <div style="background-color:cyan; border-style: solid; border-width: 1px; height:30px;"><strong>Kitkat Fusion</strong></div>
+      <div style="background-color: cyan; border-style: solid; border-width: 1px; height:60px;">Ingredients:Crushed Kitkat,Milk,Vanilla Ice-Creams</div>
+      <div style="background-color: cyan; border-style: solid; border-width: 1px; height:30px;"><b>Price:80kr</b></div><br>
+      <button class="btn btn-danger my-cart-btn" data-id="6" data-name="Kitkat Fusion"  data-price="80" data-quantity="1" data-image="Beverages\Kitkat.png">Add to Cart</button><br>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <img src="Beverages\Orange.jpg" width="200px" height="200px" >
+      <div style="background-color:cyan; border-style: solid; border-width: 1px; height:30px;"><strong>Orange Juice</strong></div>
+      <div style="background-color: cyan; border-style: solid; border-width: 1px; height:60px;">Ingredients:Fresh Oranges with pulp,Sugar</div>
+      <div style="background-color: cyan; border-style: solid; border-width: 1px; height:30px;"><b>Price:50kr</b></div><br>
+      <button class="btn btn-danger my-cart-btn" data-id="7" data-name="Orange Juice"  data-price="50" data-quantity="1" data-image="Beverages\Orange.jpg">Add to Cart</button><br>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <img src="Beverages\Apple.png" width="200px" height="200px" >
+      <div style="background-color:cyan; border-style: solid; border-width: 1px; height:30px;"><strong>Apple Juice</strong></div>
+      <div style="background-color: cyan; border-style: solid; border-width: 1px; height:60px;">Ingredients:Fresh Apples,Sugar</div>
+      <div style="background-color: cyan; border-style: solid; border-width: 1px; height:30px;"><b>Price:50kr</b></div><br>
+      <button class="btn btn-danger my-cart-btn" data-id="8" data-name="Apple Juice"  data-price="50" data-quantity="1" data-image="Beverages\Apple.png">Add to Cart</button><br>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <img src="Beverages\Coke.jpg" width="200px" height="200px" >
+      <div style="background-color:cyan; border-style: solid; border-width: 1px; height:30px;"><strong>Coca-Cola Zero sugar</strong></div>
+      <div style="background-color: cyan; border-style: solid; border-width: 1px; height:60px;">Ingredients:Carbonated Water,Caramel color,Food additives,Natural flavors</div>
+      <div style="background-color: cyan; border-style: solid; border-width: 1px; height:30px;"><b>Price:20kr</b></div><br>
+      <button class="btn btn-danger my-cart-btn" data-id="9" data-name="Coca-Cola Zero sugar"  data-price="20" data-quantity="1" data-image="Beverages\Coke.jpg">Add to Cart</button><br>
+    </div>
+</div>
+</section><br><br><hr>
+
+<!-- Main Menu Section -->
+
+<section id="main-course" style="margin-left:5%; margin-right:5%">
+    <center><h1>We have two different vareities of main courses(Indo-Asian & Italien) </h1><br><br></center>
+    <div class="row">
+      
+        <div class="col-md-3 text-center">
+            <img src="main-courses\margareta.jpg" width="200px" height="200px" >
+            <div style="background-color:cyan; border-style: solid; border-width: 1px; height:30px;"><strong>Margherita pizza</strong></div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:100px;">Ingredients: wheat dough,chilli flakes,salt,mozzarilla cheese,tomatos,pasata sauce,basil</div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:30px;"><b>Price:95kr</b></div><br>
+            <button class="btn btn-danger my-cart-btn" data-id="1" data-name="Margherita pizza"  data-price="95" data-quantity="1" data-image="main-courses\margareta.jpg">Add to Cart</button><br>
+        </div>
+        
+        <div class="col-md-3 text-center">
+            <img src="main-courses\chicken.jpg" width="200px" height="200px" >
+            <div style="background-color:cyan; border-style: solid; border-width: 1px; height:30px;"><strong>Chicken kebab pizza</strong></div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:100px;">Ingredients: wheat dough,coriander leaves,salt,cheese,chicken,basil,pepper,organo,oil,pasata sauce</div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:30px;"><b>Price:99kr</b></div><br>
+            <button class="btn btn-danger my-cart-btn" data-id="2" data-name="Chicken kebab pizza"  data-price="99" data-quantity="1" data-image="main-courses\chicken.jpg">Add to Cart</button><br>
+        </div>
+  
+        <div class="col-md-3 text-center">
+            <img src="main-courses\pepperoni.jpg" width="200px" height="200px" >
+            <div style="background-color:cyan; border-style: solid; border-width: 1px; height:30px;"><strong>Pepperoni pizza</strong></div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:100px;">Ingredients:wheat dough,coriander leaves,salt,cheese,chicken,basil,pepper,organo,oil,pasata sauce</div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:30px;"><b>Price:90kr</b></div><br>
+            <button class="btn btn-danger my-cart-btn" data-id="3" data-name="Pepperoni pizza"  data-price="90" data-quantity="1" data-image="main-courses\pepperoni.jpg">Add to Cart</button><br>
+        </div>
+  
+        <div class="col-md-3 text-center">
+            <img src="main-courses\meatballpasta.jpg" width="200px" height="200px" >
+            <div style="background-color:cyan; border-style: solid; border-width: 1px; height:30px;"><strong>Meat ball pasta</strong></div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:100px;">Ingredients:meat,oil,salt,rice noodels,pepper,organo,tomato sauce,soya sauce,ginger-garlic</div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:30px;"><b>Price:95kr</b></div><br>
+            <button class="btn btn-danger my-cart-btn" data-id="4" data-name="Meat ball pasta"  data-price="95" data-quantity="1" data-image="main-courses\meatballpasta.jpg">Add to Cart</button><br>
+        </div>
+        
+        <div class="col-md-3 text-center">
+            <img src="main-courses\lasange.jpg" width="200px" height="200px" >
+            <div style="background-color:cyan; border-style: solid; border-width: 1px; height:30px;"><strong>Lasange</strong></div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:100px;">Ingredients:Italian sausage,ground beef,minced onion,garlic,tomato,basil,salt,black pepper,egg,cheese </div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:30px;"><b>Price:80kr</b></div><br>
+            <button class="btn btn-danger my-cart-btn" data-id="5" data-name="Lasange"  data-price="80" data-quantity="1" data-image="main-courses\lasange.jpg">Add to Cart</button><br>
+        </div>
+
+        <div class="col-md-3 text-center">
+            <img src="main-courses\pasta.jpg" width="200px" height="200px" >
+            <div style="background-color:cyan; border-style: solid; border-width: 1px; height:30px;"><strong>Pasta carbonara</strong></div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:100px;">Ingredients:Egg, hard cheese, cured pork,Pecorino Romano cheese,Parmigiano-Reggiano cheese,black pepper</div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:30px;"><b>Price:80kr</b></div><br>
+            <button class="btn btn-danger my-cart-btn" data-id="6" data-name="Pasta carbonara"  data-price="80" data-quantity="1" data-image="main-courses\pasta.jpg">Add to Cart</button><br>
+        </div>
+
+        <div class="col-md-3 text-center">
+            <img src="main-courses\friedrice.jpg" width="200px" height="200px" >
+            <div style="background-color:cyan; border-style: solid; border-width: 1px; height:30px;"><strong>Veg fried rice</strong></div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:100px;">Ingredients: Rice,onions,green chillies,jeera,beans,green peas,caroot,potato,spring onions,coriander,ginger-garlic</div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:30px;"><b>Price:90kr</b></div><br>
+            <button class="btn btn-danger my-cart-btn" data-id="7" data-name="Veg fried rice"  data-price="90" data-quantity="1" data-image="main-courses\friedrice.jpg">Add to Cart</button><br>
+        </div>
+
+        <div class="col-md-3 text-center">
+            <img src="main-courses\greenchicken.jpg" width="200px" height="200px" >
+            <div style="background-color:cyan; border-style: solid; border-width: 1px; height:30px;"><strong>Green chicken curry</strong></div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:100px;">Ingredients:Salt,green chillies,chicken,oil,coriander leaves,mint,onions,ginger-garlic,spices,coconut milk</div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:30px;"><b>Price:80kr</b></div><br>
+            <button class="btn btn-danger my-cart-btn" data-id="8" data-name="Green chicken curry"  data-price="80" data-quantity="1" data-image="main-courses\greenchicken.jpg">Add to Cart</button><br>
+        </div>
+
+        <div class="col-md-3 text-center">
+            <img src="main-courses\mushroom.jpg" width="200px" height="200px" >
+            <div style="background-color:cyan; border-style: solid; border-width: 1px; height:30px;"><strong>Mushroom fried noodles</strong></div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:100px;">Ingredients:Rice Noodles,mushrooms,ginger-garlic,tomato sauce,vinegar,soya sauce,spring onions,onions</div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:30px;"><b>Price:80kr</b></div><br>
+            <button class="btn btn-danger my-cart-btn" data-id="9" data-name="Mushroom fried noodles"  data-price="80" data-quantity="1" data-image="main-courses\mushroom.jpg">Add to Cart</button><br>
+        </div>
+
+        <div class="col-md-3 text-center">
+            <img src="main-courses\naan.jpg" width="200px" height="200px" >
+            <div style="background-color:cyan; border-style: solid; border-width: 1px; height:30px;"><strong>Naan</strong></div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:100px;">Ingredients:All-purpose Flour,garlic,butter,milk,oil,organo,coriander,roasted sesame seeds</div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:30px;"><b>Price:10kr</b></div><br>
+            <button class="btn btn-danger my-cart-btn" data-id="10" data-name="Naan"  data-price="10" data-quantity="1" data-image="main-courses\naan.jpg">Add to Cart</button><br>
+        </div>
+
+        <div class="col-md-3 text-center">
+            <img src="main-courses\schezwan.jpg" width="200px" height="200px" >
+            <div style="background-color:cyan; border-style: solid; border-width: 1px; height:30px;"><strong>Schezwan chicken</strong></div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:100px;">Ingredients:Onions,salt,Chicken,peanuts,capsicum,tomatos,red-chillies,coriander,ginger-garlic,spring onions</div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:30px;"><b>Price:85kr</b></div><br>
+            <button class="btn btn-danger my-cart-btn" data-id="11" data-name="Schezwan chicken"  data-price="85" data-quantity="1" data-image="main-courses\schezwan.jpg">Add to Cart</button><br>
+        </div>
+
+        <div class="col-md-3 text-center">
+            <img src="main-courses\Munchuriyan.jpg" width="200px" height="200px" >
+            <div style="background-color:cyan; border-style: solid; border-width: 1px; height:30px;"><strong>munchuriyan</strong></div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:100px;">Ingredients:Cabbage,carrots,corn flour,salt,pepper,oil,spring onions,coriander,soya sauce,tomato ketchup,vinegar</div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:30px;"><b>Price:75kr</b></div><br>
+            <button class="btn btn-danger my-cart-btn" data-id="11" data-name="munchuriyan"  data-price="75" data-quantity="1" data-image="main-courses\Munchuriyan.jpg">Add to Cart</button><br>
+        </div>
+
+    </div>
+  </section><br><br><hr>
+
+<!--Desserts Section-->
+  <section id="desserts" style="margin-left:5%; margin-right:5%">
+    <center><h1>Enjoy our yummy yummy desserts </h1><br><br></center>
+    <div class="row">
+      
+        <div class="col-md-3 text-center">
+            <img src="Desserts\Baklava.jpg" width="200px" height="200px" >
+            <div style="background-color:cyan; border-style: solid; border-width: 1px; height:30px;"><strong>Baklava</strong></div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:60px;">Ingredients: Pastry,Walnuts,Cinnamon,Chocolate syrup,Vanilla Ice-cream</div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:30px;"><b>Price:50kr</b></div><br>
+            <button class="btn btn-danger my-cart-btn" data-id="1" data-name="Baklava"  data-price="50" data-quantity="1" data-image="Desserts\Baklava.jpg">Add to Cart</button><br>
+        </div>
+        
+        <div class="col-md-3 text-center">
+            <img src="Desserts\Chocolate.jpg" width="200px" height="200px" >
+            <div style="background-color:cyan; border-style: solid; border-width: 1px; height:30px;"><strong>German Chocolate Bread Pudding</strong></div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:60px;">Ingredients: Light brown sugar,Milk,Chocolate Syrup,Unsalted Butter</div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:30px;"><b>Price:50kr</b></div><br>
+            <button class="btn btn-danger my-cart-btn" data-id="2" data-name="German Chocolate Bread Pudding"  data-price="50" data-quantity="1" data-image="Desserts\Chocolate.jpg">Add to Cart</button><br>
+        </div>
+  
+        <div class="col-md-3 text-center">
+            <img src="Desserts\Panna.jpg" width="200px" height="200px" >
+            <div style="background-color:cyan; border-style: solid; border-width: 1px; height:30px;"><strong>Panna-Cotta</strong></div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:60px;">Ingredients:Coconut milk,Cane Sugar,Lime Zest,cherry jam</div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:30px;"><b>Price:60kr</b></div><br>
+            <button class="btn btn-danger my-cart-btn" data-id="3" data-name="Panna-Cotta"  data-price="60" data-quantity="1" data-image="Desserts\Panna.jpg">Add to Cart</button><br>
+        </div>
+  
+        <div class="col-md-3 text-center">
+            <img src="Desserts\Banana.jpg" width="200px" height="200px" >
+            <div style="background-color:cyan; border-style: solid; border-width: 1px; height:30px;"><strong>Banana Ice-cream</strong></div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:60px;">Ingredients:Frozen Bananas,Vanilla Bean powder,Coconut whipped cream</div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:30px;"><b>Price:45kr</b></div><br>
+            <button class="btn btn-danger my-cart-btn" data-id="4" data-name="Banana Ice-cream"  data-price="45" data-quantity="1" data-image="Desserts\Banana.jpg">Add to Cart</button><br>
+        </div>
+        
+        <div class="col-md-3 text-center">
+            <img src="Desserts\Caramel.jpg" width="200px" height="200px" >
+            <div style="background-color:cyan; border-style: solid; border-width: 1px; height:30px;"><strong>Caramel Topped Ice-cream</strong></div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:60px;">Ingredients:Vanilla Ice-cream,Milk,Sugar,Caramel Syrup,Almonds </div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:30px;"><b>Price:50kr</b></div><br>
+            <button class="btn btn-danger my-cart-btn" data-id="5" data-name="Caramel Topped Ice-cream"  data-price="50" data-quantity="1" data-image="Desserts\Caramel.jpg">Add to Cart</button><br>
+        </div>
+
+        <div class="col-md-3 text-center">
+            <img src="Desserts\Strawberry.jpg" width="200px" height="200px" >
+            <div style="background-color:cyan; border-style: solid; border-width: 1px; height:30px;"><strong>Ice cream with Strawberry Jam</strong></div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:60px;">Ingredients:Milk,Sugar,Vanilla Ice-cream,Strawberry Jam</div>
+            <div style="background-color: cyan; border-style: solid; border-width: 1px; height:30px;"><b>Price:40kr</b></div><br>
+            <button class="btn btn-danger my-cart-btn" data-id="6" data-name="Ice cream with Strawberry Jam"  data-price="40" data-quantity="1" data-image="Desserts\Strawberry.jpg">Add to Cart</button><br>
+        </div>
+
+    </div>
+</section><br><br><hr>
+
+
+  <script src="js/jquery-2.2.3.min.js"></script>
+  <script type='text/javascript' src="js/bootstrap.min.js"></script>
+  <script type='text/javascript' src="js/jquery.mycart.js"></script>
+  <script type="text/javascript">
+  $(function () {
+
+    var goToCartIcon = function($addTocartBtn){
+      var $cartIcon = $(".my-cart-icon");
+      var $image = $('<img width="30px" height="30px" src="' + $addTocartBtn.data("image") + '"/>').css({"position": "fixed", "z-index": "999"});
+      $addTocartBtn.prepend($image);
+      var position = $cartIcon.position();
+      $image.animate({
+        top: position.top,
+        left: position.left
+      }, 500 , "linear", function() {
+        $image.remove();
+      });
+    }
+
+    $('.my-cart-btn').myCart({
+      currencySymbol: 'Kr.',
+      classCartIcon: 'my-cart-icon',
+      classCartBadge: 'my-cart-badge',
+      classProductQuantity: 'my-product-quantity',
+      classProductRemove: 'my-product-remove',
+      classCheckoutCart: 'my-cart-checkout',
+      affixCartIcon: true,
+      showCheckoutModal: true,
+      numberOfDecimals: 2,
+      /* cartItems: [
+        {id: 1, name: 'product 1', summary: 'summary 1', price: 10, quantity: 1, image: 'images/img_1.png'},
+        {id: 2, name: 'product 2', summary: 'summary 2', price: 20, quantity: 2, image: 'images/img_2.png'},
+        {id: 3, name: 'product 3', summary: 'summary 3', price: 30, quantity: 1, image: 'images/img_3.png'}
+      ], */
+      clickOnAddToCart: function($addTocart){
+        goToCartIcon($addTocart);
+      },
+      afterAddOnCart: function(products, totalPrice, totalQuantity) {
+        console.log("afterAddOnCart", products, totalPrice, totalQuantity);
+      },
+      clickOnCartIcon: function($cartIcon, products, totalPrice, totalQuantity) {
+        console.log("cart icon clicked", $cartIcon, products, totalPrice, totalQuantity);
+      },
+      checkoutCart: function(products, totalPrice, totalQuantity) {
+        var checkoutString = "Total Price: " + totalPrice + "\nTotal Quantity: " + totalQuantity;
+        //checkoutString += "\n\n id \t name \t summary \t price \t quantity \t image path";
+        // $.each(products, function(){
+        //   checkoutString += ("\n " + this.id + " \t " + this.name + " \t " + this.summary + " \t " + this.price + " \t " + this.quantity + " \t " + this.image);
+        // });
+        alert(checkoutString)
+        console.log("checking out", products, totalPrice, totalQuantity);
+      }
+      
+    });
+
+  });
+  </script>
+
+</body>
+
+</html>
+
+
+
+
+     

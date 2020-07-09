@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Circus Restaurant</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="custom.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="bootstrap4/css/bootstrap.css">
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="css/bootstrap-social.css">
+  <!-- Add font library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+   <!-- Custom defined styles -->
+    <style>
+      .container
+      {
+        padding:20px;
+      }
+      .card
+      {
+        border-style: solid;
+        border-spacing: 1pt;
+        border-color:darkcyan;
+        border-width: 2px;
+      }
+      .card-body
+      {
+        background-color: cyan;
+        border-style: solid;
+        border-width:1px ;
+      }
+      .card-deck
+      {
+        padding:20px;
+      } 
+    </style>
+</head>
+
+<body>
+ <!-- Header -->
+        <div>
+          <!-- Fixed navbar -->
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="home.html"><img src="images/1.webp" width="125" height="75" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="">Event</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="About.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Gallery.html">Gallery</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+<!-- Main page content -->        
+ 
+<div class="container">
+    <h2> <center>Italian Menu</center></h2>
+    <!-- using card deck class in bootstrap to display 3 cards in a row -->
+    <div class="card-deck">
+        <!-- using bootstrap kitchen sink card to create the list of Beverages  -->
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="main-courses\margareta.jpg" alt="Card image cap" width="300px" height="300px">
+            <div class="card-body"> <h5 class="card-title" >Margherita pizza</h5></div>
+            <div class="card-body"><p class="card-text"><b>Ingredients:</b> wheat dough,chilli flakes,salt,mozzarilla cheese,tomatos,pasata sauce,basil</p></div>
+            <div class="card-body"> <p class="card-text" ><b>Price:95kr</b></p> </div>
+            <div class="card-body"> <center><a href="cart.html" class="btn btn-primary stretched-link"  onclick=add()>Add to cart</a></center></div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="main-courses\chicken.jpg" alt="Card image cap" width="300px" height="300px">
+            <div class="card-body"> <h5 class="card-title">Chicken kebab pizza</h5></div>
+            <div class="card-body"><p class="card-text"><b>Ingredients:</b> wheat dough,coriander leaves,salt,cheese,chicken,basil,pepper,organo,oil,pasata sauce </p></div>
+            <div class="card-body"> <p class="card-text"><b>Price:99kr</b></p> </div>
+            <div class="card-body"> <center><a href="cart.html" class="btn btn-primary stretched-link"  onclick=add()>Add to cart</a></center></div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="main-courses\pepperoni.jpg" alt="Card image cap" width="300px" height="300px">
+            <div class="card-body"> <h5 class="card-title">Pepperoni pizza</h5></div>
+            <div class="card-body"><p class="card-text"><b>Ingredients:</b> wheat dough,coriander leaves,salt,cheese,chicken,basil,pepper,organo,oil,pasata sauce</p></div>
+            <div class="card-body"> <p class="card-text"><b>Price:100kr</b></p> </div>
+            <div class="card-body"> <center><a href="cart.html" class="btn btn-primary stretched-link"  onclick=add()>Add to cart</a></center></div>
+        </div>
+    </div>
+    <!-- using card deck class in bootstrap to display 3 cards in a row -->
+    <div class="card-deck">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="main-courses\meatballpasta.jpg" alt="Card image cap" width="300px" height="300px">
+            <div class="card-body"> <h5 class="card-title" >Meat ball pasta</h5></div>
+            <div class="card-body"><p class="card-text"><b>Ingredients:</b> meat,oil,salt,rice noodels,pepper,organo,tomato sauce,soya sauce,ginger-garlic</p></div>
+            <div class="card-body"> <p class="card-text" ><b>Price:95kr</b></p> </div>
+            <div class="card-body"> <center><a href="cart.html" class="btn btn-primary stretched-link"  onclick=add()>Add to cart</a></center></div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="main-courses\lasange.jpg" alt="Card image cap" width="300px" height="300px">
+            <div class="card-body"> <h5 class="card-title"> Lasange</h5></div>
+            <div class="card-body"><p class="card-text"><b>Ingredients:</b> Italian sausage,ground beef,minced onion,garlic,tomato,basil,salt,black pepper,egg,cheese</p></div>
+            <div class="card-body"> <p class="card-text"><b>Price:90kr</b></p> </div>
+            <div class="card-body"> <center><a href="cart.html" class="btn btn-primary stretched-link"  onclick=add()>Add to cart</a></center></div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="main-courses\pasta.jpg" alt="Card image cap" width="300px" height="300px">
+            <div class="card-body"> <h5 class="card-title">Pasta carbonara</h5></div>
+            <div class="card-body"><p class="card-text"><b>Ingredients:</b> Egg, hard cheese, cured pork,Pecorino Romano cheese,Parmigiano-Reggiano cheese,black pepper</p></div>
+            <div class="card-body"> <p class="card-text"><b>Price:80kr</b></p> </div>
+            <div class="card-body"> <center><a href="cart.html" class="btn btn-primary stretched-link"  onclick=add()>Add to cart</a></center></div>
+        </div>
+    </div>
+
+    <h2> <center>Indo-Asian Menu</center></h2>
+    <!-- using card deck class in bootstrap to display 3 cards in a row -->
+    <div class="card-deck">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="main-courses\friedrice.jpg" alt="Card image cap" width="300px" height="300px">
+            <div class="card-body"> <h5 class="card-title" >Veg fried rice</h5></div>
+            <div class="card-body"><p class="card-text"><b>Ingredients:</b> Rice,onions,green chillies,jeera,beans,green peas,caroot,potato,spring onions,coriander,ginger-garlic</p></div>
+            <div class="card-body"> <p class="card-text" ><b>Price:95kr</b></p> </div>
+            <div class="card-body"> <center><a href="cart.html" class="btn btn-primary stretched-link"  onclick=add()>Add to cart</a></center></div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="main-courses\greenchicken.jpg" alt="Card image cap" width="300px" height="300px">
+            <div class="card-body"> <h5 class="card-title">Green chicken curry</h5></div>
+            <div class="card-body"><p class="card-text"><b>Ingredients:</b> Salt,green chillies,chicken,oil,coriander leaves,mint,onions,ginger-garlic,spices,coconut milk</p></div>
+            <div class="card-body"> <p class="card-text"><b>Price:99kr</b></p> </div>
+            <div class="card-body"> <center><a href="cart.html" class="btn btn-primary stretched-link"  onclick=add()>Add to cart</a></center></div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="main-courses\mushroom.jpg" alt="Card image cap" width="300px" height="300px">
+            <div class="card-body"> <h5 class="card-title">Mushroom fried noodles</h5></div>
+            <div class="card-body"><p class="card-text"><b>Ingredients:</b> Rice Noodles,mushrooms,ginger-garlic,tomato sauce,vinegar,soya sauce,spring onions,onions</p></div>
+            <div class="card-body"> <p class="card-text"><b>Price:100kr</b></p> </div>
+            <div class="card-body"> <center><a href="cart.html" class="btn btn-primary stretched-link"  onclick=add()>Add to cart</a></center></div>
+        </div>
+    </div>
+    <!-- using card deck class in bootstrap to display 3 cards in a row -->
+    <div class="card-deck">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="main-courses\naan.jpg" alt="Card image cap" width="300px" height="300px">
+            <div class="card-body"> <h5 class="card-title" >Naan</h5></div>
+            <div class="card-body"><p class="card-text"><b>Ingredients:</b> All-purpose Flour,garlic,butter,milk,oil,organo,coriander,roasted sesame seeds</p></div>
+            <div class="card-body"> <p class="card-text" ><b>Price:10kr</b></p> </div>
+            <div class="card-body"> <center><a href="cart.html" class="btn btn-primary stretched-link"  onclick=add()>Add to cart</a></center></div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="main-courses\schezwan.jpg" alt="Card image cap" width="300px" height="300px">
+            <div class="card-body"> <h5 class="card-title">Schezwan chicken</h5></div>
+            <div class="card-body"><p class="card-text"><b>Ingredients:</b> Onions,salt,Chicken,peanuts,capsicum,tomatos,red-chillies,coriander,ginger-garlic,spring onions</p></div>
+            <div class="card-body"> <p class="card-text"><b>Price:90kr</b></p> </div>
+            <div class="card-body"> <center><a href="cart.html" class="btn btn-primary stretched-link"  onclick=add()>Add to cart</a></center></div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="main-courses\Munchuriyan.jpg" alt="Card image cap" width="300px" height="300px">
+            <div class="card-body"> <h5 class="card-title">munchuriyan</h5></div>
+            <div class="card-body"><p class="card-text"><b>Ingredients:</b> Cabbage,carrots,corn flour,salt,pepper,oil,spring onions,coriander,soya sauce,tomato ketchup,vinegar</p></div>
+            <div class="card-body"> <p class="card-text"><b>Price:80kr</b></p> </div>
+            <div class="card-body"> <center><a href="cart.html" class="btn btn-primary stretched-link"  onclick=add()>Add to cart</a></center></div>
+        </div>
+    </div>      
+</div>
+    <script>
+        function add()
+        {
+            
+            alert( "added to cart");
+            
+
+        }
+    </script>
+
+
+</body>
+</html>
